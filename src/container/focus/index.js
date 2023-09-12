@@ -8,17 +8,17 @@ focusInput.addEventListener('focusin', () => {
   focusMessage.style.color = 'green'
 })
 
-// Обробник події "focus"
-focusInput.addEventListener('focus', () => {
-  focusMessage.textContent = 'Елемент отримав фокус (focus)'
-  focusMessage.style.color = 'blue'
-})
+// // Обробник події "focus"
+// focusInput.addEventListener('focus', () => {
+//   focusMessage.textContent = 'Елемент отримав фокус (focus)'
+//   focusMessage.style.color = 'blue'
+// })
 
-// Обробник події "blur"
-focusInput.addEventListener('blur', () => {
-  focusMessage.textContent = 'Елемент втратив фокус'
-  focusMessage.style.color = 'red'
-})
+// // Обробник події "blur"
+// focusInput.addEventListener('blur', () => {
+//   focusMessage.textContent = 'Елемент втратив фокус'
+//   focusMessage.style.color = 'red'
+// })
 
 // Обробник події "focusout"
 focusInput.addEventListener('focusout', () => {
@@ -26,3 +26,9 @@ focusInput.addEventListener('focusout', () => {
     'Елемент втратив фокус (focusout)'
   focusMessage.style.color = 'orange'
 })
+
+document
+  .querySelector('.form__group')
+  .addEventListener('focusout', () => {
+    alert('focusout')
+  })

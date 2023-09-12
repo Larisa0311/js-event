@@ -38,6 +38,7 @@ dropZone.addEventListener('drop', (event) => {
   console.log(event)
 
   event.preventDefault()
+
   const data = event.dataTransfer.getData('text/plain')
   dropZone.textContent = `Впустили: ${data}`
   console.log("Об'єкт впущено")
